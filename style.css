@@ -409,3 +409,29 @@ h2{
         left: -37px;
     }
 }
+
+
+footer{
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: #3D405B;
+    color: #F4F1DE;
+    text-align: center;
+}
+
+.footer-links{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-links a{
+    color: #F4F1DE;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover{
+    color: #E07A5F;
+}
