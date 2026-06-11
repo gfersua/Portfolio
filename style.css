@@ -271,117 +271,153 @@ h2{
 }
 
 
-/* TABLET */
-@media (max-width: 992px){
-
-    header{
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+/* ════════════════════════════════
+   TABLET  (≤ 992px)
+════════════════════════════════ */
+@media (max-width: 992px) {
+ 
+    /* header: nunca tocar width ni margin — solo ajustar nav */
+    header nav {
+        justify-content: center;
     }
-
-    .container{
+ 
+    .presentacion {
+        margin-top: 100px;
+        padding: 2rem 1.5rem;
+    }
+ 
+    .container-2 {
         flex-direction: column;
-        margin-top: 0;
+        align-items: center;
     }
-
-    .presentacion{
-        width: 90%;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .foto-perfil{
+ 
+    .decoracion {
         width: 100%;
-        max-width: 500px;
+        max-width: 400px;
     }
-
-    .decoracion{
+ 
+    .secciones {
+        margin-top: 60px;
         width: 100%;
-        max-width: 500px;
     }
-
-    .secciones{
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .secciones p{
+ 
+    .secciones p {
         width: 80%;
     }
-
-    .grid-container{
-        grid-template-columns: 1fr;
-    }
-
-    .soft{
-        grid-template-columns: repeat(3,1fr);
+ 
+    #proyectos {
+        width: 100%;
+        padding: 2rem 1.5rem;
     }
 }
-
-
-/* MOVIL */
-@media (max-width: 768px){
-
-    h1{
-        font-size: 2.5rem;
+ 
+ 
+/* ════════════════════════════════
+   MÓVIL  (≤ 768px)
+════════════════════════════════ */
+@media (max-width: 768px) {
+ 
+    h1 {
+        font-size: 2rem;
     }
-
-    h2{
-        font-size: 1.5rem;
+ 
+    h2 {
+        font-size: 1.4rem;
     }
-
-    .secciones h3{
+ 
+    .presentacion {
+        margin-top: 90px;
+        padding: 1.5rem 1rem;
+    }
+ 
+    .secciones {
+        margin-top: 50px;
+    }
+ 
+    .secciones h3 {
         font-size: 1.7rem;
     }
-
-    .secciones h4{
+ 
+    .secciones h4 {
         font-size: 1.2rem;
+        text-align: center;
     }
-
-    .secciones p{
+ 
+    .secciones p {
         width: 95%;
         font-size: 1rem;
         text-align: center;
     }
-
-    header nav{
+ 
+    header nav {
         justify-content: center;
-        flex-wrap: wrap;
-        font-size: 1rem;
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
     }
-
-    header nav a{
-        margin: 10px;
+ 
+    header nav a {
+        margin: 10px 8px;
     }
-
-    .foto-perfil{
-        max-width: 320px;
+ 
+    .decoracion {
+        display: none;
     }
-
-    .decoracion{
-        display: none; /* opcional */
+ 
+    .skills-grid {
+        grid-template-columns: 1fr;
+        padding: 0 0.5rem;
     }
-
-    .grid-container{
-        gap: 20px;
+ 
+    #proyectos {
+        padding: 1.5rem 1rem;
     }
-
-    .soft{
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .project-card{
+ 
+    .project-card {
         margin-left: 35px;
+        padding: 1.2rem;
     }
-
-    .timeline::before{
+ 
+    .timeline::before {
         left: 12px;
     }
-
-    .project-card::before{
+ 
+    .project-card::before {
         left: -37px;
+    }
+}
+ 
+ 
+/* ════════════════════════════════
+   MÓVIL PEQUEÑO  (≤ 400px)
+════════════════════════════════ */
+@media (max-width: 400px) {
+ 
+    h1 {
+        font-size: 1.6rem;
+    }
+ 
+    h2 {
+        font-size: 1.2rem;
+    }
+ 
+    header nav a {
+        margin: 8px 6px;
+        font-size: 0.85rem;
+    }
+ 
+    .project-card {
+        margin-left: 28px;
+        padding: 1rem;
+    }
+ 
+    .timeline::before {
+        left: 8px;
+    }
+ 
+    .project-card::before {
+        left: -31px;
+        width: 13px;
+        height: 13px;
     }
 }
 
